@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOAT ZONE — Greatest Of All Time Animals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating goat emojis background -->
+  <div class="floating-goats" id="floatingGoats"></div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="badge">🐐 EST. FOREVER AGO 🐐</div>
+      <h1 class="hero-title">
+        <span class="glitch" data-text="GOAT">GOAT</span>
+        <br />
+        <span class="subtitle">Greatest Of All Time Animals</span>
+      </h1>
+      <p class="hero-desc">
+        They scream like humans. They eat literally everything. They climb mountains vertically.
+        <br />Goats are built different, and we're here to celebrate that.
+      </p>
+      <a href="#facts" class="cta-btn">Enter the Goat Zone 🐐</a>
+    </div>
+    <div class="hero-goat">
+      <div class="big-goat">🐐</div>
+      <div class="goat-crown">👑</div>
+    </div>
+  </header>
+
+  <!-- Screaming Banner -->
+  <div class="scream-banner">
+    <span>BAAAAAAA</span>
+    <span>🐐</span>
+    <span>MAAAAAAAA</span>
+    <span>🐐</span>
+    <span>BAAAAAAAA</span>
+    <span>🐐</span>
+    <span>MAAAAAAAA</span>
+    <span>🐐</span>
+    <span>BAAAAAAA</span>
+    <span>🐐</span>
+    <span>MAAAAAAAA</span>
+    <span>🐐</span>
+  </div>
+
+  <!-- Fun Facts -->
+  <section id="facts" class="facts-section">
+    <h2 class="section-title">🧠 Totally Real Goat Facts</h2>
+    <div class="facts-grid">
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">🏔️</div>
+        <div class="fact-back">Goats can climb near-vertical cliffs. They basically invented parkour.</div>
+      </div>
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">👁️</div>
+        <div class="fact-back">Goats have rectangular pupils giving them 320° vision. They see more than you ever will.</div>
+      </div>
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">🍕</div>
+        <div class="fact-back">Goats will eat almost anything — cardboard, clothes, your homework. It's art direction.</div>
+      </div>
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">😱</div>
+        <div class="fact-back">Screaming goats sound disturbingly human. Scientists have no explanation. Neither do we.</div>
+      </div>
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">🧠</div>
+        <div class="fact-back">Goats can solve puzzles and remember the solution for up to 10 months. Genius energy.</div>
+      </div>
+      <div class="fact-card" onclick="this.classList.toggle('flipped')">
+        <div class="fact-front">💅</div>
+        <div class="fact-back">Baby goats (kids) learn to play within minutes of being born. Born to slay, basically.</div>
+      </div>
+    </div>
+    <p class="click-hint">👆 Click a card to reveal the fact</p>
+  </section>
+
+  <!-- Goat Types -->
+  <section class="types-section">
+    <h2 class="section-title">🌍 Goat Varieties (A Very Scientific Study)</h2>
+    <div class="types-grid">
+      <div class="type-card">
+        <div class="type-emoji">🐐</div>
+        <h3>The Mountain Goat</h3>
+        <p>Lives on sheer cliff faces for fun. Hates the concept of "safe footing." Absolute chaos agent.</p>
+        <div class="vibe-tag">Vibe: Adrenaline Junkie</div>
+      </div>
+      <div class="type-card">
+        <div class="type-emoji">🦙</div>
+        <h3>The Nigerian Dwarf</h3>
+        <p>Tiny. Loud. Opinionated. Will headbutt you with the confidence of someone 10x their size.</p>
+        <div class="vibe-tag">Vibe: Small Dog Energy</div>
+      </div>
+      <div class="type-card">
+        <div class="type-emoji">🐑</div>
+        <h3>The Fainting Goat</h3>
+        <p>Stiffens up and falls over when startled. Not actually fainting — just incredibly dramatic.</p>
+        <div class="vibe-tag">Vibe: Theater Kid</div>
+      </div>
+      <div class="type-card">
+        <div class="type-emoji">🎭</div>
+        <h3>The Boer Goat</h3>
+        <p>Big, elegant, and has a two-tone coat that looks professionally designed. Fashion icon.</p>
+        <div class="vibe-tag">Vibe: Runway Model</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goat Screamer -->
+  <section class="screamer-section">
+    <h2 class="section-title">🔊 The Goat Screamer</h2>
+    <p class="section-desc">Press the button. You know you want to.</p>
+    <button class="scream-btn" id="screamBtn" onclick="goatScream()">
+      PRESS FOR GOAT ENERGY 🐐
+    </button>
+    <div class="scream-output" id="screamOutput"></div>
+  </section>
+
+  <!-- Goat Wisdom -->
+  <section class="wisdom-section">
+    <h2 class="section-title">📜 Ancient Goat Wisdom</h2>
+    <div class="wisdom-card" id="wisdomCard">
+      <div class="wisdom-quote" id="wisdomQuote">"Click the button to receive wisdom."</div>
+      <button class="wisdom-btn" onclick="newWisdom()">New Wisdom 🐐</button>
+    </div>
+  </section>
+
+  <!-- Gallery (emoji art) -->
+  <section class="gallery-section">
+    <h2 class="section-title">🎨 Goat Art Gallery</h2>
+    <div class="gallery-grid">
+      <div class="art-piece">
+        <pre class="ascii-goat">
+  /\_/\
+ ( o.o )
+  > ^ <
+ (  |  )
+  \/|\/
+    |
+   / \
+        </pre>
+        <p class="art-title">"Contemplation"</p>
+      </div>
+      <div class="art-piece mountain">
+        <div class="mountain-scene">
+          <span class="mountain-goat">🐐</span>
+          <div class="mountain-peak">▲</div>
+        </div>
+        <p class="art-title">"The Summit"</p>
+      </div>
+      <div class="art-piece">
+        <div class="emoji-art">
+          🌿🐐🌿<br/>
+          🌸🌱🌸<br/>
+          🍃🌾🍃
+        </div>
+        <p class="art-title">"Pastoral Bliss"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-goat">🐐</div>
+    <p>Made with 🐐 love by someone who spent too long on goat Wikipedia</p>
+    <p class="footer-tagline">No goats were harmed in the making of this website. Several were consulted.</p>
+    <p class="footer-small">© 2026 GOAT ZONE™ — All bleats reserved</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
